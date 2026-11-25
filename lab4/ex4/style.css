@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 20px;
+    color: #000000;
+}
+
+.text-background span {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+div .text-background span {
+    background-color: #ffff00;
+}
+
+span span {
+    background-color: #888888;
+    text-decoration: line-through;
+}
+
+ol span span {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+section > p {
+    text-shadow: 3px 3px 5px rgba(180, 80, 80, 0.6);
+    text-indent: 50px;
+}
+
+li > ul {
+    list-style-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="%23333333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>');
+}
+
+div > .text-background {
+    word-spacing: 50px;
+}
+
+.text-bold > p {
+    font-weight: bold;
+}
+
+.text-bold > section > p {
+    line-height: 45px;
+}
+
+img + p {
+    background-color: #800000;
+    color: #ffffff;
+    padding: 5px;
+}
+
+section ~ p {
+    color: black;
+}
+.text-bold1{
+    color: red;
+}

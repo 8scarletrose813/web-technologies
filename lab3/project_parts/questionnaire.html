@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета користувача</title>
+</head>
+<body>
+<button> <a href="file:///home/scarlet_rose/Project/lab3/index.html">Назад</a></button>
+<h1>Анкета користувача</h1>
+<form method="post" enctype="multipart/form-data">
+<!--<form method="get">-->
+    <fieldset>
+        <legend>Особиста інформація</legend>
+
+        <label for="name">Ім'я:</label>
+        <input type="text"
+               id="name"
+               name="name"
+               value=""
+               placeholder="Введіть ваше ім'я"
+               required
+               tabindex="1">
+        <br><br>
+        <label for="surname">Прізвище:</label>
+        <input type="text"
+               id="surname"
+               name="surname"
+               value=""
+               placeholder="Введіть ваше прізвище"
+               required
+               tabindex="2">
+        <br><br>
+        <label for="about">Про себе:</label><br>
+        <textarea id="about"
+                  name="about"
+                  placeholder="Коротко розкажіть про себе"
+                  tabindex="3"></textarea>
+        <br><br>
+        <label for="birthdate">Дата народження:</label>
+        <input type="date"
+               id="birthdate"
+               name="birthdate"
+               value=""
+               tabindex="4">
+        <br><br>
+    </fieldset>
+    <fieldset>
+        <legend>Контактні дані</legend>
+
+        <label for="email">Email:</label>
+        <input type="email"
+               id="email"
+               name="email"
+               value=""
+               placeholder="example@gmail.com"
+               autocomplete="off"
+               pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+               required
+               tabindex="5">
+        <br><br>
+        <label for="phone">Мобільний номер:</label>
+        <input type="tel"
+               id="phone"
+               name="phone"
+               value=""
+               placeholder="+380XXXXXXXXX"
+               pattern="\+380[0-9]{9}"
+               required
+               tabindex="6">
+        <br><br>
+        <label for="password">Пароль:</label>
+        <input type="password"
+               id="password"
+               name="password"
+               value=""
+               placeholder="6 символів: Aa1234"
+               pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])[A-Za-z0-9]{6}"
+               required
+               tabindex="7">
+        <br><br>
+
+    </fieldset>
+    <fieldset>
+        <legend>Навчання</legend>
+        <p>Ваш курс:</p>
+        <label>
+            <input type="radio"
+                   name="course"
+                   value="1"
+                   tabindex="8">
+            1 курс
+        </label>
+        <label>
+            <input type="radio"
+                   name="course"
+                   value="2"
+                   tabindex="9">
+            2 курс
+        </label>
+        <label>
+            <input type="radio"
+                   name="course"
+                   value="3"
+                   tabindex="10">
+            3 курс
+        </label>
+        <p>Форма навчання:</p>
+        <label>
+            <input type="radio"
+                   name="education"
+                   value="budget"
+                   tabindex="11">
+            Бюджет
+        </label>
+        <label>
+            <input type="radio"
+                   name="education"
+                   value="contract"
+                   checked
+                   tabindex="12">
+            Контракт
+        </label>
+        <label>
+            <input type="radio"
+                   name="education"
+                   value="other"
+                   tabindex="13">
+            Інше
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Ваші інтереси</legend>
+
+        <label>
+            <input type="checkbox"
+                   name="interests"
+                   value="programming"
+                   tabindex="14">
+            Програмування
+        </label>
+
+        <label>
+            <input type="checkbox"
+                   name="interests"
+                   value="design"
+                   tabindex="15">
+            Дизайн
+        </label>
+
+        <label>
+            <input type="checkbox"
+                   name="interests"
+                   value="music"
+                   tabindex="16">
+            Музика
+        </label>
+
+        <label>
+            <input type="checkbox"
+                   name="interests"
+                   value="books"
+                   tabindex="17">
+            Книги
+        </label>
+
+    </fieldset>
+    <fieldset>
+        <legend>Додаткова інформація</legend>
+
+        <label for="city">Оберіть місто:</label>
+
+        <select id="city"
+                name="city"
+                tabindex="18">
+
+            <option value="kyiv">Київ</option>
+            <option value="lviv">Львів</option>
+            <option value="chernivtsi" selected>Чернівці</option>
+            <option value="odesa">Одеса</option>
+            <option value="kharkiv">Харків</option>
+
+        </select>
+        <br><br>
+        <label for="languages">Які мови програмування знаєте?</label><br>
+        <select id="languages"
+                name="languages"
+                multiple
+                tabindex="19">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="cpp">C++</option>
+            <option value="java">Java</option>
+        </select>
+        <br><br>
+        <label for="technology">Оберіть технологію:</label>
+
+        <select id="technology"
+                name="technology"
+                tabindex="20">
+            <optgroup label="Frontend">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </optgroup>
+            <optgroup label="Backend">
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="php">PHP</option>
+            </optgroup>
+            <optgroup label="Database">
+                <option value="mysql">MySQL</option>
+                <option value="postgresql">PostgreSQL</option>
+                <option value="mongodb">MongoDB</option>
+            </optgroup>
+            <optgroup label="Game Development">
+                <option value="godot">Godot</option>
+                <option value="unity">Unity</option>
+                <option value="unreal">Unreal Engine</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <label for="browser">Ваш браузер:</label>
+        <input list="browsers"
+               id="browser"
+               name="browser"
+               value=""
+               placeholder="Введіть або виберіть браузер"
+               tabindex="21">
+        <datalist id="browsers">
+            <option value="Google Chrome">
+            <option value="Mozilla Firefox">
+            <option value="Microsoft Edge">
+            <option value="Opera">
+        </datalist>
+    </fieldset>
+    <fieldset>
+        <legend>Аудіофайли</legend>
+        <label for="audio">Завантажте аудіофайли:</label>
+        <input type="file"
+               id="audio"
+               name="audio"
+               value=""
+               accept="audio/*"
+               multiple
+               tabindex="22">
+    </fieldset>
+    <fieldset>
+        <legend>Відправлення форми</legend>
+        <button type="submit" tabindex="23">
+            Надіслати
+        </button>
+        <button type="reset" tabindex="24">
+            Очистити
+        </button>
+
+    </fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,76 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 0;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    margin: 6px 0;
+    color: #111111;
+}
+
+sub {
+    font-size: 0.75em;
+    vertical-align: sub;
+}
+
+sup {
+    font-size: 0.75em;
+    vertical-align: super;
+}
+#recipe-card {
+    background-color: #ffffff;
+    border: 2px solid #303792;
+    width: 100%;
+    max-width: 750px;
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+
+#main-title {
+    color: #e52424;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.section-title {
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.bold-text {
+    font-weight: bold;
+}
+.underline-text {
+    text-decoration: underline;
+}
+.strike-text {
+    text-decoration: line-through;
+}
+.yellow-highlight {
+    background-color: #ffff00;
+    padding: 1px 4px;
+}
+.green-divider {
+    border: none;
+    height: 5px;
+    background-color: #008000;
+    margin: 25px 0 15px 0;
+}
+.footer-quote {
+    font-family: "Courier New", Courier, monospace;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+}

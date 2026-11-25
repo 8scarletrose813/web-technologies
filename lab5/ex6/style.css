@@ -1,0 +1,92 @@
+body {
+    background-image: url("img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #9999ff;
+}
+
+.container {
+    max-width: 900px;
+    min-width: 320px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.85); /*Якщо вікно браузера вужче за 320px, контейнер перестає стискатися і на сторінці з'являється горизонтальна смуга прокручування*/
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.tags-inline div {
+    display: inline;
+    width: 200px;
+    height: 100px;
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 3px;
+} /*Властивості width та height не діють на рядкові елементи (display: inline), бо їхній розмір залежить виключно від вмісту*/
+
+.tags-block span {
+    display: block;
+    width: 250px;
+    background-color: #d1ecf1;
+    padding: 6px 10px;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+.repeat-box p,
+.size-box p {
+    margin: 0;
+    padding: 4px 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: inline-block;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #000;
+}
+
+.repeat-box {
+    height: 120px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    background-image: url("img/icon.png");
+}
+
+.repeat-x { background-repeat: repeat-x; }
+.repeat-y { background-repeat: repeat-y; }
+.repeat-space { background-repeat: space; }
+.repeat-round { background-repeat: round; } /*Значення space розставляє цілі зображення з однаковими порожніми проміжками, а round масштабує (стискає/розтягує) зображення так, щоб заповнити блок без зазорів*/
+
+.size-box {
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    margin-bottom: 15px;
+    background-image: url("img/icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.size-contain { background-size: contain; }
+.size-cover { background-size: cover; }
+
+.scroll-box {
+    max-height: 150px;
+    overflow: auto;
+    margin-bottom: 15px;
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    color: white;
+}
+
+/*При scroll фон залишається нерухомим при прокручуванні тексту всередині блоку, а при local фон прокручується разом із контентом*/
+.attach-scroll { background-attachment: scroll; }
+.attach-local { background-attachment: local; }
